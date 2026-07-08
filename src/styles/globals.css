@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/* Tokens base del proyecto; las secciones consumen estos colores via Tailwind. */
+:root {
+  --brand: #c91f25;
+  --brand-hover: #a7191f;
+  --foreground: #171717;
+  --graphite: #3f3d3a;
+  --muted: #6e6963;
+  --background: #faf9f6;
+  --surface: #ffffff;
+  --stone: #eeeae4;
+  --sand: #d5c8b8;
+  --border: #ddd8d1;
+  --primary: var(--brand);
+  --primary-foreground: #ffffff;
+  --accent: var(--sand);
+  --accent-foreground: var(--foreground);
+}
+
+/* Exponer tokens a Tailwind v4 para usar clases como bg-primary o text-muted. */
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-graphite: var(--graphite);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-stone: var(--stone);
+  --color-sand: var(--sand);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --font-sans: var(--font-body), Arial, Helvetica, sans-serif;
+  --font-serif: var(--font-heading), Georgia, serif;
+}
+
+/* Reset minimo para que la landing arranque consistente entre navegadores. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 88px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 64px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--brand) 72%, white);
+  outline-offset: 3px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
