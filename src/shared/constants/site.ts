@@ -26,7 +26,7 @@ export const siteConfig = {
   quoteMessage:
     "Hola, me gustaría recibir información y solicitar una cotización con Grupo Vizcaíno.",
   serviceArea: "Durango y zonas cercanas, sujeto a confirmación con un asesor.",
-  baseUrl: "https://grupovizcaino.example",
+  baseUrl: "http://13.59.20.110/villarreal_gallegos_daniel_proyecto_final/",
 };
 
 export const brandAssets = {
@@ -71,7 +71,8 @@ const images = {
     alt: "Terraza moderna con área exterior sombreada.",
     category: "Toldos",
     sourceLabel: "Unsplash",
-    sourceUrl: "https://unsplash.com/photos/outdoor-patio-with-stylish-seating-and-awning-ooY6UL3e2bk",
+    sourceUrl:
+      "https://unsplash.com/photos/outdoor-patio-with-stylish-seating-and-awning-ooY6UL3e2bk",
   },
   wallFinish: {
     src: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80",
@@ -116,12 +117,14 @@ export const trustItems = [
   {
     icon: "message",
     title: "Asesoría personalizada",
-    description: "Te ayudamos a elegir materiales, colores y sistemas según tu espacio.",
+    description:
+      "Te ayudamos a elegir materiales, colores y sistemas según tu espacio.",
   },
   {
     icon: "measure",
     title: "Medición en sitio",
-    description: "Revisamos dimensiones y condiciones antes de definir la solución.",
+    description:
+      "Revisamos dimensiones y condiciones antes de definir la solución.",
   },
   {
     icon: "layers",
@@ -138,8 +141,7 @@ export const trustItems = [
 export const serviceCategories: ServiceCategory[] = [
   {
     title: "Persianas y cortinas",
-    description:
-      "Controla luz, privacidad y ambiente con sistemas a medida.",
+    description: "Controla luz, privacidad y ambiente con sistemas a medida.",
     href: "#persianas",
     image: images.livingBlinds,
   },
@@ -166,8 +168,7 @@ export const serviceCategories: ServiceCategory[] = [
   },
   {
     title: "Automatización",
-    description:
-      "Controla tus persianas con mayor comodidad en el uso diario.",
+    description: "Controla tus persianas con mayor comodidad en el uso diario.",
     href: "#automatizacion",
     image: images.automation,
   },
